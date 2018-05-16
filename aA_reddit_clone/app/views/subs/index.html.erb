@@ -1,0 +1,8 @@
+<!-- index sub -->
+<h1>All the Subs!</h1>
+
+<ul>
+<% @subs.each do |subred| %>
+  <li><a href="<%=sub_url(subred)%>"><%=subred.title%></a></li>
+<% end %>
+</ul>
